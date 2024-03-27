@@ -1,0 +1,26 @@
+:root {
+  --color-black: #181818;
+  --color-white: #ffffff;
+  --color-gray: #c9c9c9;
+  --color-yellow: #ffc436;
+  --color-red: #d83f31;
+  --color-blue: #337ccf;
+  --color-lightblue: #82acdc;
+  --color-bg: #fff5e0;
+
+  --font-family: 'RocknRoll One', sans-serif;
+  --font-weight: 300;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+p {
+  margin: 0;
+}

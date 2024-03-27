@@ -1,0 +1,19 @@
+.title {
+  color: var(--color-blue);
+  text-align: center;
+}
+
+.date-picker {
+  margin: 0 auto 20px;
+  width: var(--calendar-size);
+}
+.date-box {
+  display: flex;
+  margin: 0 0 10px 0;
+  padding-left: 10px;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border: 2px solid var(--color-gray);
+  border-radius: 10px;
+}

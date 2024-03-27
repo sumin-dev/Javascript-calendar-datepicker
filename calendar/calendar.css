@@ -1,0 +1,84 @@
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+.calendar {
+  display: none;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.month-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+.month-container i {
+  cursor: pointer;
+}
+.month-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.month-title-eng {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.month-title-num {
+  font-size: 0.8em;
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0.6em;
+
+  text-align: center;
+  background-color: var(--color-bg);
+}
+.days-container div {
+  padding: 0.8em 0.6em;
+}
+.day {
+  color: var(--color-blue);
+}
+.date {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+.date:hover {
+  background-color: var(--color-lightblue);
+}
+.date.selected {
+  background-color: var(--color-lightblue);
+}
+.last-date,
+.next-date {
+  color: var(--color-gray);
+}
+.cur-date.sun {
+  color: var(--color-red);
+}
+.cur-date.sat {
+  color: var(--color-blue);
+}
+.cur-date.today {
+  border: 3px solid var(--color-yellow);
+  border-radius: 5px;
+  position: relative;
+}
+.cur-date.today::before {
+  content: 'TODAY';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: var(--color-yellow);
+}
